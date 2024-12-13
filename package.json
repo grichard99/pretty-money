@@ -1,0 +1,28 @@
+{
+  "name": "pretty-money-js",
+  "version": "1.0.1",
+  "description": "A simple package for formatting and converting currencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "pretty-money test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grichard99/pretty-money.git"
+  },
+  "keywords": [
+    "money",
+    "currency",
+    "dollars",
+    "formatting",
+    "converting",
+    "conversion",
+    "pretty"
+  ],
+  "author": "grichard99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grichard99/pretty-money/issues"
+  },
+  "homepage": "https://github.com/grichard99/pretty-money#readme"
+}
