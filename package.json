@@ -1,8 +1,8 @@
 {
   "name": "pretty-money-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple package for formatting and converting currencies",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "pretty-money test"
   },
