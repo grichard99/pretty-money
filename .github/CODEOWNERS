@@ -1,19 +1,20 @@
 # Default Codeowner
 /main @grichard99
+/main/ @grichard99
 
 # Codeowners for the src directory
-/src @grichard99
+/src/ @grichard99
 
 # Codeowners for the public directory
-/public @grichard99
+/public/ @grichard99
 
 # Codeowners for the .github directory
-/.github @grichard99
+/.github/ @grichard99
 
-# Codeowners for the .env directory
+# Codeowners for the .env file
 /.env @grichard99
 
-# Codeowners for the .gitignore directory
+# Codeowners for the .gitignore file
 /.gitignore @grichard99 
 
 # Codeowners for the README.md file
