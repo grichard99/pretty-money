@@ -1,9 +1,9 @@
 # Default Codeowner
-/ @grichard99
+* @grichard99
 /main @grichard99
 /main/ @grichard99
 /src/index.js @grichard99
-
+/index.js @grichard99
 
 # Codeowners for the src directory
 /src/ @grichard99
