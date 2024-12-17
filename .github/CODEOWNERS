@@ -1,2 +1,24 @@
 # Default Codeowner
 /main @grichard99
+
+# Codeowners for the src directory
+/src @grichard99
+
+# Codeowners for the public directory
+/public @grichard99
+
+# Codeowners for the .github directory
+/.github @grichard99
+
+# Codeowners for the .env directory
+/.env @grichard99
+
+# Codeowners for the .gitignore directory
+/.gitignore @grichard99 
+
+# Codeowners for the README.md file
+/README.md @grichard99
+
+# Codeowners for the package.json file
+/package.json @grichard99
+
