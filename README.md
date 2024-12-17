@@ -13,7 +13,7 @@
 To install `pretty-money`, use npm:
 
 ```bash
-npm install pretty-money
+npm install pretty-money-js
 ```
 
 ## Usage
