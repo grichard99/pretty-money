@@ -26,3 +26,6 @@
 # Codeowners for the package.json file
 /package.json @grichard99
 
+# Codeowners for the codeowners file
+/CODEOWNERS @grichard99
+*CODEOWNERS @grichard99
