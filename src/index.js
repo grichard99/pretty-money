@@ -1,3 +1,6 @@
+const { formatAmount } = require("./formatHelper");
+const { convertAmount } = require("./convertHelper");
+
 exports.format = (amount, currency) => {
   if (currency === "USD") {
     // United States Dollar
@@ -104,16 +107,19 @@ exports.format = (amount, currency) => {
   }
 };
 
-//Adding commas to the amount
-const formatAmount = (amount, decimalPlaces) => {
-  // If amount is undefined, return 0 with appropriate decimal places
+exports.convert = async (amount, fromCurrency, toCurrency, apiKey) => {
   if (!amount) {
-    let nilPlaceHolder = 0;
-    return nilPlaceHolder
-      .toFixed(decimalPlaces)
-      .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  } else {
-    // If amount = 3250 and decimalPlaces = 2, this will return "3,250.00"
-    return amount.toFixed(decimalPlaces).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return 0;
   }
+  return await convertAmount(amount, fromCurrency, toCurrency, apiKey);
+};
+
+exports.convertAndFormat = async (amount, fromCurrency, toCurrency, apiKey) => {
+  if (!amount) {
+    return 0;
+  }
+  return this.format(
+    await this.convert(amount, fromCurrency, toCurrency, apiKey),
+    toCurrency
+  );
 };
