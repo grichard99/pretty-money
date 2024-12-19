@@ -55,12 +55,12 @@ const convertedAndFormatted = await prettyMoney.convertAndFormat(
 );
 ```
 
-### `format(amount, options)`
+### `format(amount, currency)`
 
 Formats a given number into a currency string.
 
 - **amount**: The number to format.
-- **options**: An optional object to customize formatting (e.g., currency symbol, decimal places).
+- **currency**: The currency code to format the number in (e.g., 'USD').
 
 ### `convert(amount, fromCurrency, toCurrency)`
 
@@ -72,7 +72,7 @@ Converts an amount from one currency to another.
 
 ## Configuration
 
-You can customize the behavior of `pretty-money` by passing configuration options to the functions. For example, you can specify a different currency symbol or change the number of decimal places.
+You can customize the behavior of `pretty-money` by passing configuration arguments to the functions. For example, you can specify a different currency symbol or change the number of decimal places.
 
 ## Contributing
 
@@ -117,11 +117,3 @@ This README provides a clear overview of what `index.js` does, with examples to 
 - **CNY**: Chinese Yuan
 - **BRL**: Brazilian Real
 - **ZAR**: South African Rand
-
-To format a currency string using a specific option, pass the currency code as part of the options:
-
-```javascript
-const options = { currency: "EUR" }; // Example for Euro
-const formatted = prettyMoney.format(1234.56, options);
-console.log(formatted); // Output: €1,234.56
-```
