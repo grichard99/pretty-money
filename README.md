@@ -28,11 +28,15 @@ const formatted = prettyMoney.format(1234.56);
 console.log(formatted); // Output: $1,234.56
 
 // Convert from one currency to another
-const converted = prettyMoney.convert(100, "USD", "EUR");
+const converted = await prettyMoney.convert(100, "USD", "EUR");
 console.log(converted); // Output: Converted amount in EUR -- not formatted
 
 // Convert and format from one currency to another
-const convertedAndFormatted = prettyMoney.convertAndFormat(100, "USD", "EUR");
+const convertedAndFormatted = await prettyMoney.convertAndFormat(
+  100,
+  "USD",
+  "EUR"
+);
 console.log(convertedAndFormatted); // Output: €1,234.56
 ```
 
@@ -43,7 +47,7 @@ For converting/Converting & Formatting, you can pass in an api key from freecurr
 ```javascript
 const prettyMoney = require("pretty-money-js");
 
-const convertedAndFormatted = prettyMoney.convertAndFormat(
+const convertedAndFormatted = await prettyMoney.convertAndFormat(
   100,
   "USD",
   "EUR",
